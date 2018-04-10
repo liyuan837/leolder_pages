@@ -2,25 +2,17 @@
   {
     "id": 13501,
     "pid": 1350,
-    "state": "closed",
-    "iconCls": "fa fa-sitemap",
-    "text": "基础表单演示",
-    "url": ""
+    "state": "open",
+    "iconCls":"",
+    "text": "用户列表",
+    "url": "./html/complex/dialog.html"
   },
   {
     "id": 13502,
     "pid": 1350,
-    "state": "closed",
-    "iconCls": "",
-    "text": "基础表格操作演示",
-    "url": ""
-  },
-  {
-    "id": 13503,
-    "pid": 1350,
-    "state": "closed",
-    "iconCls": "",
-    "text": "多表格加载效率演示",
-    "url": ""
+    "state": "open",
+    "iconCls":"",
+    "text": "用户查询",
+    "url": "./html/complex/dialog.html"
   }
 ]

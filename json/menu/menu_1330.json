@@ -4,7 +4,7 @@
     "pid": 1330,
     "state": "open",
     "iconCls": "",
-    "text": "拆线图",
+    "text": "图文列表",
     "url": "./html/echarts/line.html"
   },
   {
@@ -12,7 +12,7 @@
     "pid": 1330,
     "state": "open",
     "iconCls": "",
-    "text": "柱状图",
+    "text": "图文查询",
     "url": "./html/echarts/bar.html"
   },
   {
@@ -20,15 +20,7 @@
     "pid": 1330,
     "state": "open",
     "iconCls": "",
-    "text": "饼图",
+    "text": "图文发布",
     "url": "./html/echarts/pie.html"
-  },
-  {
-    "id": 1357,
-    "pid": 1330,
-    "state": "open",
-    "iconCls": "",
-    "text": "雷达图",
-    "url": "./html/echarts/radar.html"
   }
 ]

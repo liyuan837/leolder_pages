@@ -67,7 +67,7 @@ $(function () {
     // 初始化accordion
     $("#RightAccordion").iAccordion({
         fit: true,
-        border: false
+        border: true
     });
 
     // 绑定横向导航菜单点击事件
@@ -83,85 +83,6 @@ $(function () {
     $('.systemName').eq('0').trigger('click');
     //generateMenu(1325, "系统配置");
 
-    // 显示系统首页
-    /*setTimeout(function () {
-     var indexTab = [];
-     indexTab.iconCls = "icon-house";
-     indexTab.text = "系统门户";
-     var portal = $.getUrlParam("portal");
-     if (portal == "system" || portal == null) portal = "system";
-     indexTab.url = "html/portal/index.html";
-     indexTab.closable = false;
-     indexTab.border = false;
-     addTab(indexTab);
-     }, 1);*/
-
-    $("#setThemes").click(function () {
-        $("#themeStyle").dialog({
-            title: '设置主题风格',
-        }).dialog('open');
-    });
-
-    // 保存主题
-    $(".topjuiTheme").on("click", function () {
-        var theme = $('input[name="themes"]:checked').val();
-        var menu = $('input[name="menustyle"]:checked').val();
-        var topmenu = $('input[name="topmenu"]').is(':checked');
-        $.post("/json/response/success.json", {
-            theme: theme,
-            menu: menu,
-            topmenu: topmenu
-        }, function (data) {
-            changeTheme(theme);
-            //window.location.reload();
-        }, "json");
-    });
-
-    // 修改密码窗口
-    $('#pwdDialog').iDialog({
-        buttons: [{
-            text: '确定',
-            iconCls: 'fa fa-save',
-            btnCls: 'topjui-btn',
-            handler: function () {
-                if ($('#pwdDialog').form('validate')) {
-                    if ($("#password").val().length < 6) {
-                        $.iMessager.alert('警告', '密码长度不能小于6位', 'messager-warning');
-                    } else {
-                        var formData = $("#pwdDialog").serialize();
-                        $.ajax({
-                            url: './json/response/success.json',
-                            type: 'post',
-                            cache: false,
-                            data: formData,
-                            beforeSend: function () {
-                                $.iMessager.progress({
-                                    text: '正在操作...'
-                                });
-                            },
-                            success: function (data, response, status) {
-                                $.iMessager.progress('close');
-                                if (data.statusCode == 200) {
-                                    $.iMessager.show({
-                                        title: '提示',
-                                        msg: '操作成功'
-                                    });
-                                    $("#pwdDialog").iDialog('close').form('reset');
-
-                                } else {
-                                    $.iMessager.alert('操作失败！', '未知错误或没有任何修改，请重试！', 'messager-error');
-                                }
-                            }
-                        });
-                    }
-                }
-            }
-        }],
-        onOpen: function () {
-            $(this).panel('refresh');
-        }
-    });
-    
 });
 
 // Tab菜单操作
