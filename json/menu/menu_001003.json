@@ -1,15 +1,15 @@
 [
   {
-    "id": 1337,
-    "pid": 1328,
+    "id": "001003001",
+    "pid": "001003",
     "text": "问答列表",
     "state": "open",
     "iconCls": "",
     "url": "html/grid/datagrid.html"
   },
   {
-    "id": 1338,
-    "pid": 1328,
+    "id": "001003002",
+    "pid": "001003",
     "text": "问答查询",
     "state": "open",
     "iconCls": "",

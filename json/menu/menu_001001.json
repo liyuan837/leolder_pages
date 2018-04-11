@@ -1,15 +1,15 @@
 [
   {
-    "id": 13501,
-    "pid": 1350,
+    "id": "001001001",
+    "pid": "001001",
     "state": "open",
     "iconCls":"",
     "text": "用户列表",
-    "url": "./html/complex/dialog.html"
+    "url": "./html/user/list.html"
   },
   {
-    "id": 13502,
-    "pid": 1350,
+    "id": "001001002",
+    "pid": "001001",
     "state": "open",
     "iconCls":"",
     "text": "用户查询",

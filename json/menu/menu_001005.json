@@ -1,23 +1,23 @@
 [
   {
-    "id": 1357,
-    "pid": 1330,
+    "id": "001005001",
+    "pid": "001005",
     "state": "open",
     "iconCls": "",
     "text": "图文列表",
     "url": "./html/echarts/line.html"
   },
   {
-    "id": 1355,
-    "pid": 1330,
+    "id": "001005002",
+    "pid": "001005",
     "state": "open",
     "iconCls": "",
     "text": "图文查询",
     "url": "./html/echarts/bar.html"
   },
   {
-    "id": 1356,
-    "pid": 1330,
+    "id": "001005003",
+    "pid": "001005",
     "state": "open",
     "iconCls": "",
     "text": "图文发布",

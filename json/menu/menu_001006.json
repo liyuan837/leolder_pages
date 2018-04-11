@@ -1,0 +1,34 @@
+[
+  {
+    "id": "001006001",
+    "pid": "001006",
+    "state": "open",
+    "iconCls": "",
+    "text": "时间轴",
+    "url": "./html/extend/timeaxis.html"
+  },
+  {
+    "id": "001006002",
+    "pid": "001006",
+    "state": "open",
+    "iconCls": "",
+    "text": "自动完成",
+    "url": "./html/extend/autocomplete_index.html"
+  },
+  {
+    "id": "001006003",
+    "pid": "001006",
+    "state": "open",
+    "iconCls": "",
+    "text": "富文本编辑器",
+    "url": "./html/extend/editor_index.html"
+  },
+  {
+    "id": "001006004",
+    "pid": "001006",
+    "state": "open",
+    "iconCls": "",
+    "text": "单文件上传框",
+    "url": "./html/extend/upload.html"
+  }
+]

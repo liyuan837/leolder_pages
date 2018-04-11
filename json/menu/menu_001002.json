@@ -1,26 +1,26 @@
 [
   {
-    "id": 203,
-    "pid": 1327,
+    "id": "001002001",
+    "pid": "001002",
     "state": "open",
     "iconCls": "",
     "text": "课程列表",
-    "url": "./html/form/textbox.html"
+    "url": "./html/complex/datagrid.html"
   },
   {
-    "id": 204,
-    "pid": 1327,
+    "id": "001002002",
+    "pid": "001002",
     "state": "open",
     "iconCls": "",
     "text": "课程查询",
     "url": "./html/form/passwordbox.html"
   },
   {
-    "id": 205,
-    "pid": 1327,
+    "id": "001002003",
+    "pid": "001002",
     "state": "open",
     "iconCls": "",
     "text": "课程发布",
-    "url": "./html/form/passwordbox.html"
+    "url": "./html/complex/panel_add.html"
   }
 ]

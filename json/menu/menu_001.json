@@ -1,47 +1,47 @@
 [
   {
-    "id": 1350,
-    "pid": 1325,
+    "id": "001001",
+    "pid": "001",
     "text": "用户管理",
     "state": "closed",
     "iconCls": "fa fa-heartbeat",
     "url": ""
   },
   {
-    "id": 1327,
-    "pid": 1325,
+    "id": "001002",
+    "pid": "001",
     "text": "课程管理",
     "state": "closed",
     "iconCls": "fa fa-bank",
     "url": ""
   },
   {
-    "id": 1328,
-    "pid": 1325,
+    "id": "001003",
+    "pid": "001",
     "text": "问答管理",
     "state": "closed",
     "iconCls": "fa fa-table",
     "url": ""
   },
   {
-    "id": 1329,
-    "pid": 1325,
+    "id": "001004",
+    "pid": "001",
     "text": "积分管理",
     "state": "closed",
     "iconCls": "fa fa-list",
     "url": ""
   },
   {
-    "id": 1330,
-    "pid": 1325,
+    "id": "001005",
+    "pid": "001",
     "text": "学习管理",
     "state": "closed",
     "iconCls": "fa fa-bar-chart",
     "url": ""
   },
   {
-    "id": 1331,
-    "pid": 1325,
+    "id": "001006",
+    "pid": "001",
     "text": "其他",
     "state": "closed",
     "iconCls": "fa fa-map",
