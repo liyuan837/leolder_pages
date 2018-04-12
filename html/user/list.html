@@ -26,8 +26,11 @@
 </head>
 
 <body>
-<table data-toggle="topjui-datagrid"
+
+<table id="table" data-toggle="topjui-datagrid"
        data-options="id: 'userlist',
+            pagination:false,
+            <!--rownumbers:false,-->
             filter: [{
                 field: 'name',
                 type: 'textbox',
@@ -35,11 +38,11 @@
             }]">
     <thead>
     <tr>
-        <th data-options="field:'uid',title:'用户ID',sortable:true"></th>
-        <th data-options="field:'name',title:'用户名',sortable:true"></th>
-        <th data-options="field:'tel',title:'手机号',sortable:true"></th>
-        <th data-options="field:'sex',title:'用户性别',sortable:true"></th>
-        <th data-options="field:'rate',title:'信息完整度',sortable:true,formatter:progressFormatter"></th>
+        <th data-options="field:'uid',title:'用户ID',sortable:false"></th>
+        <th data-options="field:'name',title:'用户名',sortable:false"></th>
+        <th data-options="field:'tel',title:'手机号',sortable:false"></th>
+        <th data-options="field:'sex',title:'用户性别',sortable:false"></th>
+        <th data-options="field:'rate',title:'信息完整度',sortable:false,formatter:progressFormatter"></th>
     </tr>
     </thead>
     <tbody>
@@ -57,8 +60,41 @@
         <td>w</td>
         <td data-options="formatter:progressFormatter">2</td>
     </tr>
+    <tr>
+        <td>w</td>
+        <td>w</td>
+        <td>w</td>
+        <td>w</td>
+        <td data-options="formatter:progressFormatter">2</td>
+    </tr>
+    <tr>
+        <td>w</td>
+        <td>w</td>
+        <td>w</td>
+        <td>w</td>
+        <td data-options="formatter:progressFormatter">2</td>
+    </tr><tr>
+        <td>w</td>
+        <td>w</td>
+        <td>w</td>
+        <td>w</td>
+        <td data-options="formatter:progressFormatter">2</td>
+    </tr><tr>
+        <td>w</td>
+        <td>w</td>
+        <td>w</td>
+        <td>w</td>
+        <td data-options="formatter:progressFormatter">2</td>
+    </tr><tr>
+        <td>w</td>
+        <td>w</td>
+        <td>w</td>
+        <td>w</td>
+        <td data-options="formatter:progressFormatter">2</td>
+    </tr>
     </tbody>
 </table>
+
 
 <!-- 表格工具栏开始 -->
 <div id="userlist-toolbar" class="topjui-toolbar"
@@ -129,6 +165,37 @@
 </div>
 <!-- 表格工具栏结束 -->
 
+<style>
+    body{
+        position: relative;
+    }
+    #pageul{
+        list-style: none;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #pageul li{
+         display: inline-block;
+     }
+
+    #pageul li a{
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        line-height: 24px;
+        text-align: center;
+    }
+
+</style>
+<ul id="pageul">
+    <li><a href="javascript:void(0)"><i class="fa fa-angle-left"></i></a></li>
+    <li>第<a href="javascript:void(0)">1</a>页</li>
+    <li>共<a href="javascript:void(0)">10</a>页</li>
+    <li><a href="javascript:void(0)"><i class="fa fa-angle-right"></i></a></li>
+</ul>
 <script>
     function progressFormatter(value, rowData, rowIndex) {
         var htmlstr = '<div id="p" class="topjui-progressbar progressbar" data-options="value:' + value + '" style="width: 398px; height: 26px;">';
